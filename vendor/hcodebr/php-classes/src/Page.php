@@ -6,6 +6,8 @@ class Page {
     private $tpl;
     private $option = [];
     private $defaults = [
+        "header"=>true,
+        "footer"=>true,
         "data"=>[] 
         ]; 
 public function __construct($opts = array(), $tpl_dir = "/views/"){
@@ -23,10 +25,7 @@ public function __construct($opts = array(), $tpl_dir = "/views/"){
 
     $this->setData($this->options["data"]);
 
-        foreach ($this->options["data"] as $key => $value){
-        $this->tpl->assign($key, $value);    
-        }   
-    $this->tpl->draw("header");
+        if ($this->options["header"] === true) $this->tpl->draw("header");
 }
 
 private function setData($data = array ())
@@ -44,9 +43,7 @@ public function setTpl($name, $data = array(), $returnHTML = false)
 }
 
 public function __destruct (){
- $this->tpl->draw("footer");
-
-
+    if ($this->options["footer"] === true) $this->tpl->draw("footer");
 
 }
 
