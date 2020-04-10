@@ -90,7 +90,7 @@
                             <div class="product-f-image">
                                 <img src="<?php echo htmlspecialchars( $value1["desphoto"], ENT_COMPAT, 'UTF-8', FALSE ); ?>" alt="">
                                 <div class="product-hover">
-                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Adicionar ao Carinho</a>
+                                    <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i>Carrinho</a>
                                     <a href="/products/<?php echo htmlspecialchars( $value1["desurl"], ENT_COMPAT, 'UTF-8', FALSE ); ?>" class="view-details-link"><i class="fa fa-link"></i> Ver detalhes</a>
                                 </div>
                             </div>
