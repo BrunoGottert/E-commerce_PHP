@@ -23,7 +23,7 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="product-images">
-                                <div class="product-main-img">  
+                                <div class="product-main-img">
                                     <img src="<?php echo htmlspecialchars( $product["desphoto"], ENT_COMPAT, 'UTF-8', FALSE ); ?>">
                                 </div>
                             </div>
@@ -33,19 +33,19 @@
                             <div class="product-inner">
                                 <h2 class="product-name"><?php echo htmlspecialchars( $product["desproduct"], ENT_COMPAT, 'UTF-8', FALSE ); ?></h2>
                                 <div class="product-inner-price">
-                                    <ins>R$ <?php echo formatPrice($product["vlprice"]); ?></ins>
+                                    <ins>R$<?php echo formatPrice($product["vlprice"]); ?></ins>
                                 </div>    
                                 
                                 <form action="/cart/<?php echo htmlspecialchars( $product["idproduct"], ENT_COMPAT, 'UTF-8', FALSE ); ?>/add" class="cart">
                                     <div class="quantity">
                                         <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="qtd" min="1" step="1">
                                     </div>
-                                   <button class="add_to_cart_button" type="submit">Comprar</button>
+                                    <button class="add_to_cart_button" type="submit">Comprar</button>
                                 </form>   
-                                
+                                 
                                 <div class="product-inner-category">
                                     <p>Categorias<?php $counter1=-1;  if( isset($categories) && ( is_array($categories) || $categories instanceof Traversable ) && sizeof($categories) ) foreach( $categories as $key1 => $value1 ){ $counter1++; ?> <a href="/categories/<?php echo htmlspecialchars( $value1["idcategory"], ENT_COMPAT, 'UTF-8', FALSE ); ?>"><?php echo htmlspecialchars( $value1["descategory"], ENT_COMPAT, 'UTF-8', FALSE ); ?></a><?php } ?>.
-                                </div>  
+                                </div> 
                                 
                                 <div role="tabpanel">
                                     <ul class="product-tab" role="tablist">

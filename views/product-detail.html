@@ -23,7 +23,7 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="product-images">
-                                <div class="product-main-img">  
+                                <div class="product-main-img">
                                     <img src="{$product.desphoto}">
                                 </div>
                             </div>
@@ -33,19 +33,19 @@
                             <div class="product-inner">
                                 <h2 class="product-name">{$product.desproduct}</h2>
                                 <div class="product-inner-price">
-                                    <ins>R$ {function="formatPrice($product.vlprice)"}</ins>
+                                    <ins>R${function="formatPrice($product.vlprice)"}</ins>
                                 </div>    
                                 
                                 <form action="/cart/{$product.idproduct}/add" class="cart">
                                     <div class="quantity">
                                         <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="qtd" min="1" step="1">
                                     </div>
-                                   <button class="add_to_cart_button" type="submit">Comprar</button>
+                                    <button class="add_to_cart_button" type="submit">Comprar</button>
                                 </form>   
-                                
+                                 
                                 <div class="product-inner-category">
                                     <p>Categorias{loop="$categories"} <a href="/categories/{$value.idcategory}">{$value.descategory}</a>{/loop}.
-                                </div>  
+                                </div> 
                                 
                                 <div role="tabpanel">
                                     <ul class="product-tab" role="tablist">
