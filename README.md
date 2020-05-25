@@ -6,5 +6,5 @@ Linguagens utilizadas: JavaScript, PHP 7, HTML5, CSS3 e BOOTSTRAP.
 Banco de dados utilizado: MySQL.
 Gerenciador de pacotes: Composer.
 
-Projeto desenvolvido durante as aulas do curso digital disponibilizado pela HCODE - Treinamentos.
+Desenvolvido durante as aulas do curso digital disponibilizado pela HCODE - Treinamentos.
 Professores: Glaucio Daniel e João Rangel.
