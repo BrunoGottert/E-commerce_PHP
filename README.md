@@ -8,3 +8,5 @@ Gerenciador de pacotes: Composer.
 
 Desenvolvido durante as aulas do curso digital disponibilizado pela HCODE - Treinamentos.
 Professores: Glaucio Daniel e João Rangel.
+
+![projeto](https://github.com/BrunoGottert/ecommerce/blob/master/res/site/img/projeto.png)
